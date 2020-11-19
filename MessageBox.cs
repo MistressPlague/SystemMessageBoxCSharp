@@ -3,10 +3,15 @@ using System.Runtime.InteropServices;
 
 namespace SystemMessageBoxCSharp
 {
-    public class MessageBoxUtils
+    public class MessageBox
     {
         [DllImport("User32.dll", CharSet = CharSet.Unicode)]
-        public static extern int MessageBox(IntPtr nWnd, string text, string title, uint type);
+        private static extern int MessageBox(IntPtr nWnd, string text, string title, uint type);
+
+        public static int Show(string text, string title, uint type)
+        {
+            return MessageBox(IntPtr.Zero, text, title, type);
+        }
 
         public enum MessageBoxButtons
         {
