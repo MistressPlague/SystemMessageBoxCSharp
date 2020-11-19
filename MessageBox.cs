@@ -3,14 +3,14 @@ using System.Runtime.InteropServices;
 
 namespace SystemMessageBoxCSharp
 {
-    public class MessageBox
+    public class MessageBoxUtils
     {
         [DllImport("User32.dll", CharSet = CharSet.Unicode)]
         private static extern int MessageBox(IntPtr nWnd, string text, string title, uint type);
 
-        public static int Show(string text, string title, uint type)
+        public static MessageBoxResult Show(string text, string title, uint type)
         {
-            return MessageBox(IntPtr.Zero, text, title, type);
+            return (MessageBoxResult)MessageBox(IntPtr.Zero, text, title, type);
         }
 
         public enum MessageBoxButtons
