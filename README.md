@@ -14,3 +14,12 @@ else if (result == MessageBoxUtils.MessageBoxResult.No)
 }
 ```
 # Version 2 Usage Is Near-Stock MessageBox Usage For WinForms. Enjoy!
+If Using Alongside WinForms Though, You May Want To Add This To Your Usings:
+```csharp
+using MessageBox = User32.MessageBox;
+using MessageBoxButtons = User32.MessageBoxButtons;
+using MessageBoxDefaultButton = User32.MessageBoxDefaultButton;
+using MessageBoxIcon = User32.MessageBoxIcon;
+using MessageBoxModal = User32.MessageBoxModal;
+using MessageBoxResult = User32.MessageBoxResult;
+```
