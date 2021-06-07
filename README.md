@@ -12,3 +12,4 @@ else if (result == MessageBoxUtils.MessageBoxResult.No)
 {
     //User Clicked No
 }
+# Version 2 Usage Is Near-Stock MessageBox Usage For WinForms. Enjoy!
