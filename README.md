@@ -13,8 +13,8 @@ else if (result == MessageBoxUtils.MessageBoxResult.No)
     //User Clicked No
 }
 ```
-# Version 2 Usage Is Near-Stock MessageBox Usage For WinForms. Enjoy!
-If Using Alongside WinForms Though, You May Want To Add This To Your Usings:
+# Version 2 Usage Is Near-Stock MessageBox Usage Like In WinForms. Enjoy!
+You May Want To Add This To Your Usings:
 ```csharp
 using MessageBox = User32.MessageBox;
 using MessageBoxButtons = User32.MessageBoxButtons;
